@@ -76,14 +76,14 @@ function stringVariables(input1, input2) {
 }
 
 function stringLength(input1) {
-   //var firstName = 0;
-   //var firstName = "Kawika"; //"Kawika" = 6
+   var firstName = 0;
+   var firstName = "Kawika"; //"Kawika" = 6
    return input1.length;
 }
 
 function firstCharacter(input1) {
-   //var firstName = "Kawika";
-   //var firstLetter = firstName[0]; // "K"
+   var firstName = "Kawika";
+   var firstLetter = firstName[0]; // "K"
    return input1[0];
 }
 
@@ -105,10 +105,41 @@ function nthToLastCharacter(input1, input2) {
    return input1[input1.length - [input2]];
 }
 
-// not sure how to do this :/
-function arrayPush(input1, input2) {
-   // input1 = array
-   // input2 = array
-   // input2 is added to end of input1
-   return "input1".push("input2");
+function arrayPush(input1) {
+   myArray = ["Dog", "Cat"];
+   myArray.push([input1]); // adds to elemnet to end of array
+   return myArray;
+}
+
+function arrayPop(input1) {
+   myArray = ["Dog", "Cat", "Mouse", "Hat"];
+   myArray.pop([input1]); // removes last element
+   return myArray;
+}
+
+function arrayShift(input1) {
+   myArray = [
+      ["dog", 3],
+      ["cat", 7],
+   ];
+   myArray.shift([input1]); // removes first element
+   return myArray;
+}
+
+function arrayUnshift(input1) {
+   myArray = ["kiwi", "apple", "banana"];
+   myArray.unshift([input1]); // adds element to the beginning of array
+   return myArray;
+}
+
+function shoppingList(input1, input2) {
+   myList = [[[input1]], [[input2]]]; // 1st element = string (item), 2nd element = quantity (of item)
+   return myList;
+}
+
+function nextInLine(input1) {
+   myArray = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"];
+   myArray.push([input1]); // adds element to end of array
+   myArray.shift(); // removes first element of array
+   return myArray;
 }
